@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+          PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+          "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+          
+          <mapper namespace="com.offcn.mapper.MobileMapper">
+          
+           <insert id="save" parameterType="com.offcn.pojo.Mobile">
+           
+            insert into mobile(MobileNumber,MobileArea,MobileType,AreaCode,PostCode) values(#{MobileNumber},#{MobileArea},#{MobileType},#{AreaCode},#{PostCode})
+          
+           </insert>
+           
+           <select id="find" parameterType="com.offcn.pojo.Mobile" resultType="com.offcn.pojo.Mobile">
+           
+           	select  * from mobile where MobileNumber=#{MobileNumber}
+           	
+           </select>
+           
+</mapper>
