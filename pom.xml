@@ -217,10 +217,7 @@
             <version>1.2.3</version>  
         </dependency> 
         <!-- shiro end --> 	        
-	        
-     
         </dependencies>
-	
 	 <build>
         <finalName>sys</finalName>
         <plugins>
